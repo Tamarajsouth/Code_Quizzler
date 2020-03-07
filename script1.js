@@ -1,7 +1,4 @@
 
-// function startQuiz () {
-//     startButton.addEventListener("click", function(){}
-// }
 
 // 5 minute timer 
 function startTimer(duration, display) {
@@ -38,11 +35,12 @@ var opt4=document.getElementById("option4");
 var res=document.getElementById("result");
 var nextbutton= document.getElementById("next");
 var q=document.getElementById('quit');
+var highScores=document.getElementById("scores");
 var tques=questions.length;
 var score=0;
 var quesindex=0;
 
-
+// quit button functions
 function quit()
 {         
 	      quiz.style.display='none';
@@ -51,6 +49,7 @@ function quit()
           result.textContent="SCORE ="+f*100;
           q.style.display="none";
 }
+// show questions w/radio buttons
 function give_ques(quesindex) 
 {
     ques.textContent=questions[quesindex].question;
@@ -58,23 +57,25 @@ function give_ques(quesindex)
 	opt2.textContent=questions[quesindex].choices[1];
 	opt3.textContent=questions[quesindex].choices[2];
 	opt4.textContent=questions[quesindex].choices[3];
-	 return;// body...
+	 return;
 };
+// select options
 give_ques(0);
 function nextques()
 {
 	var selected_ans= document.querySelector('input[type=radio]:checked');
 	if(!selected_ans)
-		{alert("SELECT AN OPTION");return;}
-
+        {alert("SELECT AN OPTION");return;}
+        
+// verify right or wrong and add to score
 	if(selected_ans.value==questions[quesindex].correctAnswer)
         {score++;
         console.log(score)}
 	selected_ans.checked=false;
 	     quesindex++;
 	     if(quesindex==tques-1)
-	     	nextbutton.textContent="Finish";
-	     var f=score/tques;
+             nextbutton.textContent="Finish";
+         var f=score/tques;
 	     if(quesindex==tques)
 	     {
 	     q.style.display='none';
@@ -87,12 +88,4 @@ function nextques()
 
 }
 
-// const highScoresList = document.getElementById("highScoresList");
-// const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-
-// scores.innerHTML = highScores
-//   .map(score => {
-//     return `<li class="high-score">${score.name} - ${score.score}</li>`;
-//   })
-//   .join("");
 

@@ -1,15 +1,16 @@
 body
 {
-	font-family: sans-serif
+    background-color: rgb(204, 204, 204);
+    font-family: 'Spartan', sans-serif;
 }
 #heading
 {     position: absolute;
+    text-align: center;
 	     left:17%;
     	width: 1000px;
-		background: rgba(255,255,255,0.5);
+		background: rgb(196, 190, 190);
 		padding: 20px;
-		border: 1px solid #000000;
-		box-shadow: 0 0 8px 3px #fff;
+		border: 3px solid #000000;
 }
 #time {
     text-align: center;
@@ -26,19 +27,19 @@ body
     	position: absolute;
     	left:20%;
     	top: 30%;
-		background: rgba(255,255,255,0.5);
+		background: rgba(212, 206, 243, 0.5);
 		padding: 20px;
-		border: 1px solid #313635;
+		border: 3px solid #000000;
 	
 }
 #question
 {
    padding: 20px;
    font-size: 22px;
-   background: rgb(73, 80, 77);
+   background: rgb(37, 37, 37);
    border-radius: 10px;
    margin: 10px 0 10px 0;
-   color: #f6f6f6;
+   color: #ffffff;
 }
 .option{
 	width: 470px;
@@ -47,12 +48,12 @@ body
 	background: rgba(255,255,255,0.5);
 	margin: 10px 0 10px 10px;
 	color: #030303;
-	 border: 2px solid #008CBA; 
+	 border: 2px solid rgb(236, 236, 236); 
 	border-radius: 5px;
 }
 
 .option:hover{
-	background: #6e7770;
+	background: #bab7c0;
 	color: #f6f6f6;	
 }
 #next
@@ -67,7 +68,7 @@ body
 	
 }
 #next:hover{
-	background-color:rgb(106, 90, 205)
+	background-color:rgb(141, 141, 141)
 }
 #quit
 {
