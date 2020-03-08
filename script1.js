@@ -1,6 +1,22 @@
-// var startButton = document.getElementById("start-btn")
-// startButton.addEventListener("click", give_ques(), startTimer({}));
 
+// // start button 
+// var startBtn = document.getElementById('start-btn');
+// startBtn.addEventListener('click', function() {
+//   startTimer();
+//   give_ques(0);
+//   var threeMinutes = 60 * 3,
+//     display = document.querySelector('#time');
+//   startTimer(threeMinutes, display);
+// });
+
+var startButton = document.getElementById("start-btn");
+startButton.addEventListener("click", start);
+function start() {
+    give_ques(0);
+    var threeMinutes = 60 * 3,
+    display = document.querySelector('#time');
+    startTimer(threeMinutes, display);
+}
 
 // 5 minute timer 
 function startTimer(duration, display) {
@@ -21,11 +37,11 @@ var countDown =  setInterval(function () {
         }
     }, 1000);
 }
-window.onload = function () {
-    var threeMinutes = 60 * 3,
-        display = document.querySelector('#time');
-    startTimer(threeMinutes, display);
-};
+// window.onload = function (){
+//     var threeMinutes = 60 * 3,
+//         display = document.querySelector('#time');
+//     startTimer(threeMinutes, display);
+// };
 // --------------------------------------
 // Variables defined
 var quiz=document.getElementById("quiz");
@@ -41,7 +57,6 @@ var highScores=document.getElementById("scores");
 var tques=questions.length;
 var score=0;
 var quesindex=0;
-// var questions =0;
 
 
 // quit button functions
@@ -64,7 +79,7 @@ function give_ques(quesindex)
 	 return;
 };
 // select options
-give_ques(0);
+// give_ques(0);
 function nextques()
 {
 	var selected_ans= document.querySelector('input[type=radio]:checked');

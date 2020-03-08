@@ -16,7 +16,7 @@ var questions = [
     },
     {
         question: "What is an API ?",
-        choices: ["a set of functions and procedures allowing the creation of applications that access the features or data of an operating system, application, or other service.", "a Starbucks drink", "like a DUI but worse", "a hot sauce"],
+        choices: ["a set of functions and procedures allowing the creation of applications that access the features or data of an operating system.", "a Starbucks drink", "like a DUI but worse", "a hot sauce"],
         correctAnswer: 0,
     }, {
         question: "What is an example of a JavaScript library?",
