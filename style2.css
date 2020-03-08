@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(204, 204, 204);
+    font-family: 'Spartan', sans-serif;
+    padding: 75px;
+    margin-inline-start: 150px;
+    font-size: larger;
+}
+#small-container {     
+    position: relative;
+    text-align: center;
+    width: 1000px;
+	background: rgb(196, 190, 190);
+    padding: 60px;
+}

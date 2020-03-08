@@ -1,3 +1,5 @@
+// var startButton = document.getElementById("start-btn")
+// startButton.addEventListener("click", give_ques(), startTimer({}));
 
 
 // 5 minute timer 
@@ -26,7 +28,6 @@ window.onload = function () {
 };
 // --------------------------------------
 // Variables defined
-// var startButton = document.getElementById("start-btn")
 var quiz=document.getElementById("quiz");
 var ques= document.getElementById("question");
 var opt1=document.getElementById("option1");
@@ -40,9 +41,7 @@ var highScores=document.getElementById("scores");
 var tques=questions.length;
 var score=0;
 var quesindex=0;
-
-
-// startButton.addEventListener("click", give_ques(), startTimer());
+// var questions =0;
 
 
 // quit button functions

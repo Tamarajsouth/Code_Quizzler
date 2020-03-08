@@ -15,20 +15,23 @@
         <h1 id="text">Quiz<h1>
                 Time Remaining: <span id="time">03:00</span> minutes!
     </div>
-
+    <!-- <div><button id="start-btn" onclick="give_ques(); startTimer();">Show Quiz</button></div> -->
     <br />
     <div id="quiz">
-        <!-- <div><button id="start-btn" onclick="give_ques();">Show Quiz</button></div> -->
-        <div id="question"></div>
-        <label class="option"><input type="radio" name="option" value="0" /><span id="option1"></span></label>
-        <label class="option"><input type="radio" name="option" value="1" /><span id="option2"></span></label>
-        <label class="option"><input type="radio" name="option" value="2" /><span id="option3"></span></label>
-        <label class="option"><input type="radio" name="option" value="3" /><span id="option4"></span></label>
-        <button id="next" onclick="nextques();">Next Question</button>
+        <div>
+            <div id="question"></div>
+            <label class="option"><input type="radio" name="option" value="0" /><span id="option1"></span></label>
+            <label class="option"><input type="radio" name="option" value="1" /><span id="option2"></span></label>
+            <label class="option"><input type="radio" name="option" value="2" /><span id="option3"></span></label>
+            <label class="option"><input type="radio" name="option" value="3" /><span id="option4"></span></label>
+            <button id="next" onclick="nextques();">Next Question</button>
+        </div>
     </div>
     <div id="result" style="display:none">
     </div>
-    <div id="scores"></div>
+    <div id="scores">
+        <a href="highscores.html"><button id="scores">Enter User Initials Here</button></a>
+    </div>
     <button id="quit" onclick="quit();">Quit</button>
     <script type="text/javascript" src="script1.js"></script>
 
